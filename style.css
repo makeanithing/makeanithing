@@ -1,0 +1,12 @@
+.js-animate-rot{
+    position: absolute;
+    animation:rot 0.25s ease 2;
+}
+.title{font-size:60px}
+@keyframes rot{
+    0%{transform:rotateZ(0)}
+    25%{transform:rotateZ(3deg)}
+    50%{transform:rotateZ(0)}
+    75%{transform:rotateZ(-3deg)}
+    100%{transform:rotateZ(0)}
+}
