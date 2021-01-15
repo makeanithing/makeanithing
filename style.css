@@ -1,8 +1,11 @@
+body{font-family: 'Black Han Sans', sans-serif;}
+
 .js-animate-rot{
-    position: absolute;
     animation:rot 0.25s ease 2;
+    font-size:1.4em;
+    position: absolute;
 }
-.title{font-size:60px}
+
 @keyframes rot{
     0%{transform:rotateZ(0)}
     25%{transform:rotateZ(3deg)}
