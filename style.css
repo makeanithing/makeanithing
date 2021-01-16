@@ -1,9 +1,39 @@
-body{font-family: 'Black Han Sans', sans-serif;}
-
+body{
+    font-family: 'Black Han Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 100%;
+    border:1px solid #ccc;
+}
+.logo{
+    width:300px;
+}
 .js-animate-rot{
     animation:rot 0.25s ease 2;
     font-size:1.4em;
     position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+        font-family: 'Black Han Sans', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+        height: 1020px;
+        width: 480px;
+        border:1px solid #ccc;
+    }
+    .logo{
+        width:800px;
+    }
 }
 
 @keyframes rot{
