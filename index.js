@@ -5,8 +5,7 @@ window.onload = function() {
     setInterval(animateText,2000);
 }
 
-function onClick(e) {
-    e.preventDefault();
+function onClick() {
     grecaptcha.ready(function() {
       grecaptcha.execute('6LcCUDEaAAAAAEbzA1Ky6XdBtGTWWCMwpYWGNskS', {action: 'submit'}).then(function(token) {
           // Add your logic to submit to your backend server here.
