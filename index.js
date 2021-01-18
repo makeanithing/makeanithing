@@ -1,8 +1,18 @@
 var colors = ['red','blue','green'];
 var gIdx = 0;
 window.onload = function() {
+    emailjs.init("user_6NsZYaOQzNdbMm0Jmihmg");
     setInterval(animateText,2000);
 }
+
+function onClick(e) {
+    e.preventDefault();
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LcCUDEaAAAAAEbzA1Ky6XdBtGTWWCMwpYWGNskS', {action: 'submit'}).then(function(token) {
+          // Add your logic to submit to your backend server here.
+      });
+    });
+  }
 
 function animateText() {
     var title = document.getElementsByClassName('title')[0];
