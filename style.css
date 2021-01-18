@@ -12,13 +12,23 @@ body{
     width: 100%;
     border:1px solid #ccc;
     background-image: url(/resource/ezgif.com-gif-maker.gif);
+    background-position: center;
 }
 .title{
     color:white;
+    font-size:2em;
+}
+.red{
+    color:lightcoral;
+}
+.blue{
+    color:lightseagreen;
+}
+.green{
+    color:lightgreen;
 }
 .js-animate-rot{
     animation:rot 0.25s ease 2;
-    font-size:1.4em;
 }
 
 @keyframes rot{
