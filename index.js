@@ -6,14 +6,19 @@ window.onload = function() {
 }
 
 function onClick(token) {
-    console.log(token);
     var templateParams = {	
         name: 'TITLE',
         email : 'ggbin20@gmail.com',
-        message : 'MESSAGE'
+        message : 'MESSAGE',
+        'g-recaptcha-response': token 
     }
 
-    emailjs.send('service_h7x70fq', 'template_jdp5144', templateParams);
+    emailjs.send('service_h7x70fq', 'template_jdp5144', templateParams)
+    .then(function(response) {
+        console.log('SUCCESS!', response);
+     }, function(error) {
+        console.log('FAILED...', error);
+     });
 }
 
 
