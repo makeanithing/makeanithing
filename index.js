@@ -13,7 +13,7 @@ function onClick(token) {
         message : 'MESSAGE'
     }
 
-    emailjs.send('gmail', 'template_jdp5144', templateParams);
+    emailjs.send('service_h7x70fq', 'template_jdp5144', templateParams);
 }
 
 
