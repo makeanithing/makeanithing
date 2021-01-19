@@ -21,6 +21,16 @@ function onClick(token) {
      });
 }
 
+function openDialog(){
+    var dialog = document.getElementById('overlay');
+    dialog.style.display='block';
+}
+
+function closeDialog(){
+    var dialog = document.getElementById('overlay');
+    dialog.style.display='none';
+}
+
 
 
 function animateText() {
