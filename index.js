@@ -5,13 +5,18 @@ window.onload = function() {
     setInterval(animateText,2000);
 }
 
-function onClick() {
-    grecaptcha.ready(function() {
-      grecaptcha.execute('6LcCUDEaAAAAAEbzA1Ky6XdBtGTWWCMwpYWGNskS', {action: 'submit'}).then(function(token) {
-          // Add your logic to submit to your backend server here.
-      });
-    });
-  }
+function onClick(token) {
+    console.log(token);
+    var templateParams = {	
+        name: 'TITLE',
+        email : 'ggbin20@gmail.com',
+        message : 'MESSAGE'
+    }
+
+    emailjs.send('gmail', 'template_jdp5144', templateParams);
+}
+
+
 
 function animateText() {
     var title = document.getElementsByClassName('title')[0];
