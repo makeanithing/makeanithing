@@ -16,8 +16,12 @@ function onClick(token) {
     emailjs.send('service_h7x70fq', 'template_jdp5144', templateParams)
     .then(function(response) {
         console.log('SUCCESS!', response);
+        alert('신청완료되었습니다!\n감사합니다!');
+        closeDialog();
      }, function(error) {
         console.log('FAILED...', error);
+        alert('오류가났습니다!\nyungibin30@gmail.com으로\n알려주시면 감사하겠습니다!');
+        closeDialog();
      });
 }
 
