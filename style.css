@@ -14,9 +14,10 @@ body{
     background-image: url(https://makeanithing.github.io/makeanithing/resource/ezgif.com-gif-maker.gif);
     background-position: center;
 }
-.title{
+.container .title{
     color:white;
     font-size:2em;
+    cursor: grab;
 }
 .red{
     color:lightcoral;
@@ -68,6 +69,46 @@ body{
 
 .dialog-body{
     padding: 10px 15px;  
+    text-align: center;
+}
+
+.input-field{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.input-field label{
+    display: block;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-field input, .input-field textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.titlebtn{
+    width: 40%;
+    display: inline-block;
+}
+
+.btn{
+    display: inline-block;
+    background: lightseagreen;
+    padding: 14px 0;
+    color: white;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    font-size:2em;
 }
 
 #overlay{

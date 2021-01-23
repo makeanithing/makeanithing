@@ -7,9 +7,9 @@ window.onload = function() {
 
 function onClick(token) {
     var templateParams = {	
-        name: 'TITLE',
-        email : 'ggbin20@gmail.com',
-        message : 'MESSAGE',
+        name: document.getElementById('_title').value,
+        email : document.getElementById('_email').value,
+        message : document.getElementById('_context').value,
         'g-recaptcha-response': token 
     }
 
@@ -24,11 +24,18 @@ function onClick(token) {
 function openDialog(){
     var dialog = document.getElementById('overlay');
     dialog.style.display='block';
+    var body = document.getElementsByTagName('body')[0];
+    body.style.overflow = 'hidden';
+    document.getElementById('_title').value = '';
+    document.getElementById('_email').value = '';
+    document.getElementById('_context').value = '';
 }
 
 function closeDialog(){
     var dialog = document.getElementById('overlay');
     dialog.style.display='none';
+    var body = document.getElementsByTagName('body')[0];
+    body.style.overflow = '';
 }
 
 
